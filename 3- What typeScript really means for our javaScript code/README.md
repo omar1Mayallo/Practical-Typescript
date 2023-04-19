@@ -168,7 +168,7 @@ function asNumber(val: number | string): number {
 ```
 when we compile asNumber to javascript code we get 
 
-``` javscript
+``` javascript
 function asNumber(val) {
   return val;
 }
