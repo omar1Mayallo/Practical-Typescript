@@ -158,6 +158,34 @@ function calculateArea(shape: Shape) {
 
 Here, This works because `class Rectangle introduces both a type and a value`, whereas interface only introduced a type.
 
+## Runtime values are not affected by type operations
+See this example : 
+
+``` typescript
+function asNumber(val: number | string): number {
+  return val as number;
+}
+```
+when we compile asNumber to javascript code we get 
+
+``` javscript
+function asNumber(val) {
+  return val;
+}
+```
+Here, ``as number`` is type operation ,so it cannot affect the runtime behavior of your code.
+
+To normalize the val you’ll need to check its runtime type and do the conversion using JavaScript constructs:
+
+``` typescript
+function asNumber(val: number | string): number {
+  return typeof val === "string" ? Number(val) : val;
+}
+```
+
+**_Since typescript doesn't affect runtime values and types and type operations are erased when you generate JavaScript, they cannot have an effect on runtime performance. TypeScript’s static types are truly zero cost._**
+
+
 <hr/>
 
 #### Resources
