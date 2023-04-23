@@ -65,3 +65,4 @@ for (const file of files) {
 - [https://betterprogramming.pub/what-is-void-in-typescript-2d21d4936537](https://betterprogramming.pub/what-is-void-in-typescript-2d21d4936537)
 - [https://learntypescript.dev/03/l3-void](https://learntypescript.dev/03/l3-void)
 - [https://brunoscopelliti.com/blog/whats-the-difference-between-undefined-and-void-in-typescript/](https://brunoscopelliti.com/blog/whats-the-difference-between-undefined-and-void-in-typescript/)
+- [https://github.com/Microsoft/TypeScript/wiki/FAQ#why-are-functions-returning-non-void-assignable-to-function-returning-void](https://github.com/Microsoft/TypeScript/wiki/FAQ#why-are-functions-returning-non-void-assignable-to-function-returning-void)
