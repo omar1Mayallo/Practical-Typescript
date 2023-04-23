@@ -55,7 +55,7 @@ for (const file of files) {
 
 ## Some use cases of void in real world
 
-> IN_PROGRESS
+[https://betterprogramming.pub/what-is-void-in-typescript-2d21d4936537](https://betterprogramming.pub/what-is-void-in-typescript-2d21d4936537)
 
 <hr />
 
